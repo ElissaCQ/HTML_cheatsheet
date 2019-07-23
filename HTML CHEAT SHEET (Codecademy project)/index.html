@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Cheat Sheet</title>
+    <link rel="icon" href="./resources/media/images/favicon.ico" type="image/x-icon">
+    <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+
+
+
+    <div class="title-section" id="title">
+      <h3 id="first-title">Welcome to...</h3>
+      <h1 id="second-title">HTML + CSS CHEAT SHEET!</h1>
+    </div>
+    
+    
+    
+    <div class="summary">
+      <h4 class="sec-subtitles">Thoughout this cheat code we will cover:</h4>
+      <ul>
+        <li><a href="#html-basic-elements">HTML Basic Elements and Structure</a></li>
+        <li><a href="#html-tables">HTML Tables</a></li>
+        <li><a href="#css-setup-selectors">CSS Setup and Selectors</a></li>
+        <li><a href="#css-visual-rules">CSS Visual Rules</a></li>
+      </ul>
+      <p>We will also provide hands-on examples for HTML and CSS concepts <a href="#hands-on-examples">here</a>.</p>
+    </div>
+    
+    
+    
+    <div class="info" id="html-basic-elements">
+      <br>
+      <h2 class="main-subtitles">HTML basic elements and structures</h2>
+      <h4 class="sec-subtitles">What is HTML?</h4>
+      <p><strong>HTML</strong> stands for <strong>H</strong>yper<strong>T</strong>ext<strong>M</strong>arkup<strong>L</strong>anguage and it is used to create the structure and content of a webpage. Most HTML elements contain opening and closing tags with raw text or other HTML tags between them. Html elements can also be nested inside other elements. The enclosed element is the child of the enclosing parent element.</p>
+      <h4 class="sec-subtitles">Basic Structures</h4>
+      
+        <p>Any HTML code must be written inside the <em class="tags">html</em> tag, without it, the code wont work.</p>
+      
+      <p>All metadata must be included in the <em class="tags">head</em> tag, which may contain for example the <em class="tags">title</em> tag (that shows thet title of the page on the browser's tab) or the <em class="tags">link</em> tag (which can connect different files to the original file, such as connecting a css file to a html file.)</p> 
+      <p>Now, for visible content there is a tag called <em class="tags">body</em> in which all visible conten must be encapsulated. For headings and sub headings we can use the <em class="tags">h1</em> though <em class="tags">h6</em> elements which are used to enlarge text.  The <em class="tags">p</em> , <em class="tags">span</em> , and <em class="tags">div</em> tags are used to specify text or blocks of text.</p>
+      
+      <p>In HTML a space on the code editor is not recognized as a space for the webpage itself, since they are used to organize the code and make it more readable.  So, to create line breaks on our webpage we use the <em class="tags">br</em> tag.</p>
+      
+      <p>In HTML we also have two different types of list. Ordered list are numbers and are created with the <em class="tags">ol</em> tag and Unordered list are bulleted and created with the <em class="tags">ul</em> tag. It is important to remember that inside of both of these tags we must nest a <em class="tags">li</em> tag that will represent the item or the list and allow it to be displayed.</p>
+      
+      <p>Images and videos can also be added by linking to an existing source using the self-closing <em class="tags">img</em> tag for images and the <em class="tags">video</em> tag.</p>
+      
+      <p>Another useful tag in HTML is the <em class="tags">a</em> tag. You can create sections on a webpage and jump to them by adding ids to the elements you wish to jump to.</p>
+      
+      <p> Finally, comments are written in HTML using the following syntax (real comments use less than signs at the beggingn and greater than sign at the end): <br><em class="tags">!-- I would be a comment if I had my initial tags--</em></p>
+        
+      <p id="important-notes">Important note*: All tags must start with less than signs at the beggingn and greater than sign at the end.</p>
+    </div>
+    
+    
+    
+    <div class="info" id="html-tables">
+      <h2 class="main-subtitles">HTML Tables</h2>
+        
+      <p> Html tables can be created with the <em class="tags">table</em> tag.  To add a row to a table the <em class="tags">tr</em> tag can be used. To ad data to a row, the <em class="tags">td</em> tag can be used.  The headings can be added with the <em class="tags">th</em> element. The data in the tables can span columns using the colspan attribute and it can span rows using the rowspan attribute.</p>
+      
+      <p>To mantain order in your tables you might want to split your table in three main sections: the head, a body, and a footer. A tables head is created with the <em class="tags">thead</em> element. A tables body is created with the <em class="tags">tbody</em> element. Finally, a tables footer is created with the <em class="tags">tfoot</em> element.</p>
+    </div>
+    
+    
+    
+    <div class="info" id="css-setup-selectors">
+      <h2 class="main-subtitles">CSS Setup and Selectors</h2>
+      <h4 class="sec-subtitles">What is CSS?</h4>
+      <p>CSS is one of the programming language that can change the look of HTML elements. In order to do this, CSS must select HTML elements, then apply the different styles to them.</p>
+      <p>CSS can select HTML elements by their tag, class, or ID. It is possible to apply multiple CSS classes can be applied to one HTML element. Styling classes can be reusable, while IDs can only be used once. IDs are more specific than classes, and classes are more specific than tags. That means IDs will override any styles from a class, and classes will override any styles from a tag selector.</p>
+      <p>Multiple selectors can be chained together to select an element. This raises the specificity, but can be necessary. Nested elements can be selected by separating selectors with a space. Multiple unrelated selectors can receive the same styles by separating the selector names with commas. There is a flag called !important that will override any style, however it should almost never be used, as it is extremely difficult to override.</p>
+ 
+    </div>
+    
+    
+    
+    <div class="info" id="css-visual-rules">
+      <h2 class="main-subtitles">CSS Visual Rules</h2>
+      <p>CSS declarations are structured into property and value pairs. There are various basic properties to style the different HTML elements. This are some examples:</p>
+      <ul>
+        <li>The <em>font-family</em> property defines the typeface of an element.
+</li>
+        <li>The <em>font-size</em> property controls the size of text displayed.</li>
+        <li>The <em>font-weight</em> property defines how thin or thick text is displayed.</li>
+        <li>The <em>text-align</em> property places text in the left, right, or center of its parent container.
+</li>
+        <li>Text can have two different color attributes: <em>color</em> and <em>background-color</em>. <em>color</em> defines the color of the text, while <em>background-color</em> defines the color behind the text.</li>
+        <li>The <em>opacity</em> property can make an element more or less transparent.</li>
+        <li>The <em>backgroung-image</em> property can set the background of an element to an image.</li>
+      </ul>
+    
+    </div>
+    
+    
+    
+    <div class="summary">
+      <h2 class="main-subtitles">~ Hands-On Examples ~</h2>
+      <p>In this tables we will be using some of the previously explained concepts to see them in action. (These tables are already in action examples of the <a href="#html-tables">tables</a> section) </p>
+    </div>
+    
+    
+    <div class="tables-exaples" id="html-table">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">HTML BASIC STRUCTURES EXAMPLES</th>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <th>Tag/Code</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>H1 Heading</td>
+            <td><em class="tags">h1</em></td>
+            <td><h1>heading</h1></td>
+          </tr>
+          <tr>
+            <td id="sample-h2">H2 Heading</td>
+            <td><em class="tags">h2</em></td>
+            <td><h2>heading</h2></td>
+          </tr>
+          <tr>
+            <td>H3 Heading</td>
+            <td><em class="tags">h3</em></td>
+            <td><h3>heading</h3></td>
+          </tr>
+          <tr>
+            <td>H4 Heading</td>
+            <td><em class="tags">h4</em></td>
+            <td><h4>heading</h4></td>
+          </tr>
+          <tr>
+            <td>H5 Heading</td>
+            <td><em class="tags">h5</em></td>
+            <td><h5>heading</h5></td>
+          </tr>
+          <tr>
+            <td>H6 Heading</td>
+            <td><em class="tags">h6</em></td>
+            <td><h6>heading</h6></td>
+          </tr>
+          <tr>
+            <td>Body Paragraph Text</td>
+            <td><em class="tags">p</em></td>
+            <td>a regular text</td>
+          </tr>
+          <tr>
+            <td>Unordered List</td>
+            <td><em class="tags">ul</em></td>
+            <td><ul>
+              <li>item</li>
+              <li>another item</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Ordered List</td>
+            <td><em class="tags">ol</em></td>
+            <td><ol>
+              <li>item</li>
+              <li>another item</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td>Image Element</td>
+            <td><em class="tags">img</em></td>
+            <td><img src="./resources/media/images/descarga (4).jpg"></td>
+          </tr>
+          <tr>
+            <td>Video Element</td>
+            <td><em class="tags">video</em></td>
+            <td><video src="./resources/media/videos/videoplayback.mp4"width="320" height="240" controls>Video not supported in your browser :(</video></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+    </div>
+    
+    <br><br><br>
+    
+    <div class="tables-examples" id="css-table">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">CSS Visual Rules Examples</th>
+          </tr>
+          <tr>
+            <td colspan="2">CSS Layout</td>
+            <td colspan="2"> (element to be styled)  {
+              <br><br>
+              <em>property: value; </em> 
+              <br>  
+              <br>
+              }</td>
+          </tr>
+          
+          <tr>
+            <th>Name</th>
+            <th>Tag/Code</th>
+            <th>Example Before Styling</th>
+            <th>Example After Styling</th>
+          </tr>
+          
+        </thead>
+        <tbody>
+         
+          <tr>
+            <td>Font Size Property</td>
+            <td>(element to be styled)  {
+              <br><br>
+              <em>font-size: 20px; </em> 
+              <br>  
+              <br>
+              }</td>
+            <td>normal sized text</td>
+            <td id="fs-p">bigger text</td>
+          </tr>
+          <tr>
+            <td>Font Family Property</td>
+            <td>(element to be styled)  {
+              <br><br>
+              <em>font-family: Georgia; </em> 
+              <br>  
+              <br>
+              }</td>
+            <td id="reg-tnw">default font</td>
+            <td id="ff-p">text in Georgia</td>
+          </tr>
+          <tr>
+            <td>Font Weight Property</td>
+            <td>(element to be styled)  {
+              <br><br>
+              <em>font-weight: bold; </em> 
+              <br>  
+              <br>
+              }</td>
+            <td>normal text</td>
+            <td id="fw-p">bold text</td>
+          </tr>
+          <tr>
+            <td>Text Align Property</td>
+            <td>(element to be styled)  {
+              <br><br>
+              <em>text-align: center; </em> 
+              <br>  
+              <br>
+              }</td>
+            <td>default left-aligned text</td>
+            <td id="ta-p">centered text</td>
+          </tr>
+          <tr>
+            <td>Color Property</td>
+            <td>(element to be styled)  {
+              <br><br>
+              <em>color: red; </em> 
+              <br>  
+              <br>
+              }</td>
+            <td>default black colored text</td>
+            <td id="c-p">red text</td>
+          </tr>
+          <tr>
+            <td>Background Color Property</td>
+            <td>(element to be styled)  {
+              <br><br>
+              <em>background-color: yellow; </em> 
+              <br>  
+              <br>
+              }</td>
+            <td>default white background color</td>
+            <td id=bc-p> yellow background color</td>
+          </tr>
+          <tr>
+            <td>Opacity Property</td>
+            <td>(element to be styled)  {
+              <br><br>
+              <em>opacity: 0.5; </em> 
+              <br>  
+              <br>
+              }</td>
+            <td>item with a default opacity of 1</td>
+            <td id="o-p">a 50% trasparency in the text</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+    </div>
+    
+    <br><br><br>
+    
+    <div class="closure">
+      <p>For More Information visit the <a href="https://devdocs.io/html/" target="blank_">HTML DOCUMENTATION SITE</a>.</p>
+    </div>
+    
+    
+    
+  </body>
+</html>

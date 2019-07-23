@@ -1,0 +1,101 @@
+body {
+    color: white;
+    font-family: 'Lucida Sans';
+    background: #141E30;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(-45deg, #35577D, #00ffbf);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #35577D,	#00ae83);
+}
+
+#first-title {
+    font-size: 45px;
+    font-family: serif;
+    text-align: center;
+
+}
+#second-title {
+    font-size: 75px;
+    font-family: serif;
+    text-align: center;
+}
+table,th,td {
+    margin: 20px auto;
+    border: 3px solid lightseagreen;
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+
+th {
+    font-size: 50;
+}
+
+.summary {
+    font-size: 40;
+}
+
+.info {
+    
+    color: white;
+}
+
+.main-subtitles {
+    font-size: 37px;
+    text-decoration-style: double
+}
+
+.sec-subtitles {
+  
+    font-size: 27px;
+}
+
+#fs-p {
+    font-size: 21px;
+}
+
+#reg-tnw {
+    font-family: 'Times New Roman';
+}
+
+#ff-p {
+    font-family: Georgia;
+}
+
+#fw-p {
+    font-weight: bold;
+}
+
+#ta-p {
+    text-align: center;
+}
+
+#c-p {
+    color: red;
+}
+
+#bc-p {
+    background-color: yellow;
+}
+
+#o-p {
+    opacity: 0.5;
+}
+
+.tags {
+    font-weight: bolder;
+    color: black;
+    background-color: rgb(194, 194, 191);
+    font-family: monospace;
+    font-size: 18px;
+}
+
+a {
+    color: #00ffbf;
+}
+
+.closure {
+    font-size: 40px;
+    text-align: center;
+}
